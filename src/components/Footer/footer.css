@@ -1,0 +1,27 @@
+.footer{
+    background: #1b1b1b;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5% 0;
+  }
+  
+  footer{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  footer ul li{
+    margin-right: 20px;
+  }
+  
+  footer p img{
+    width: 15px;
+  }
+  

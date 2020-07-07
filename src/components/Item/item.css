@@ -1,0 +1,15 @@
+.item-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.item-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-quantity{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,50 @@
+header{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .header{
+    background: #f0d43a;
+  }
+  
+  .header-text{
+    width: 50%;
+    text-align: justify;
+  }
+  
+  .header-text h1, .header-text p{
+    margin: 0;
+  }
+  
+  .header-text p{
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  
+  header img{
+    width: 30%;
+  }
+  
+  .form-input{
+    width: 40%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+  }
+  
+  .form-btn{
+    width: 10%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #000000;
+    color: white;
+  
+  }
+  

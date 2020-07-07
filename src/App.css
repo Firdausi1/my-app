@@ -1,0 +1,113 @@
+.App {
+  font-family: 'Lato', sans-serif;
+  background: #f0d43a;
+}
+
+h2{
+  font-family: 'Lobster Two', cursive;
+  font-weight: 400;
+}
+
+.link{
+  text-decoration: none;
+  border: none;
+  color: black;
+}
+
+.btn-secondary{
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  border-radius: 16px;
+  padding: 5px 16px;
+  color: black;
+  cursor: pointer;
+}
+
+.btn-primary{
+  border: 2px solid black;
+  background: black;
+  border-radius: 50%;
+  color: #f0d43a;
+  border-radius: 16px;
+  padding: 5px 16px;
+  cursor: pointer;
+}
+
+.btn-tertiary{
+  background: #22B2DA;
+  color: white;
+  border: 2px solid #22B2DA;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-link{
+  color: #22B2DA;
+  cursor: pointer;
+}
+
+.login{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  z-index: 99;
+}
+
+.login-box{
+  width: 50%;
+  margin: 20% auto;
+  background: #f7f7f7;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-form input{
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 5%;
+}
+
+.login-form button{
+  width: 40%;
+  margin-bottom: 2%;
+}
+
+
+.service{
+  text-align: center;
+  width: 80%;
+  margin: 10% auto;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.service-heading{
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+.our-services{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.our-services div{
+  width: 30%;
+}
+

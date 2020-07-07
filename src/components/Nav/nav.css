@@ -1,0 +1,31 @@
+.nav{
+    background: #f0d43a;
+}
+  
+nav{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.navStyle{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: black;
+}
+  
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+}
+
+.signUp{
+    color: #f0d43a;
+}
+  

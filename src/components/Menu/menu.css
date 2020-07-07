@@ -1,0 +1,53 @@
+.menu{
+    height: 60vh;
+    background: #ffffff;
+    position: relative;
+  }
+  
+.menu-body{
+    background-color: white;
+    position: absolute;
+    bottom: -5vh;
+    left: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+  
+.menu-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    width: 40%;
+    padding: 5% 0;
+}
+  
+.menu-text h2, .menu-text p{
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.menu-text h2{
+    padding-bottom: 5%;
+}
+  
+.menu-text p{
+    line-height: 2;
+    letter-spacing: 1px;
+    margin-bottom: 5%;
+}
+  
+.menu-img{
+    margin-top: 5%;
+    width: 40%;
+    height: 50vh;
+    padding-bottom: 5%;
+}
+  
+.menu-img img{
+    width: 100%;
+    height: 100%;
+}
