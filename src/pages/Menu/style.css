@@ -1,7 +1,7 @@
 .our-menu{
     padding: 5% 0;
-    background: #ffffff;
     letter-spacing: 1px;
+    background-color: #f7f7f7;
 }
   
 .our-menu h2{
@@ -18,7 +18,7 @@
   
 .ourMenu-list{
     width: 50%;
-    background: #f7f7f7;
+    background: #ffffff;
     color: black;
 }
   
