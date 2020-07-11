@@ -2,7 +2,7 @@ import React from 'react';
 import './item.css';
 import{Link} from 'react-router-dom';
 
-function Item({price,name,desc,itemId}) {
+function Item({price,name,itemDesc,itemQuantity,itemId}) {
     
     return (
         <div className="item-container">
@@ -11,7 +11,7 @@ function Item({price,name,desc,itemId}) {
                 <h2>{name}</h2>
                 <p>#{price}</p>
             </div>
-            <p>{desc}</p>
+            <p>{itemDesc}:{itemQuantity}</p>
             <div className="item-quantity">
                 <div>
                     <label id="quantity">Quantity</label>

@@ -2,7 +2,7 @@ import React from 'react';
 import{Link} from 'react-router-dom';
 import './style.css'
 
-function MenuList({name, desc, price, itemId}) {
+function MenuList({name, itemDesc, itemQuantity, price, itemId}) {
     return (
         <div className="ourMenu-list">
             <Link className="link" to={`/menu/${itemId}`}>
@@ -13,7 +13,7 @@ function MenuList({name, desc, price, itemId}) {
                     <div className="Menu-content">
                         <div className="Menu-text">
                             <h4>{name} </h4>
-                            <p>{desc}</p>
+                            <p>{itemDesc}:{itemQuantity}</p>
                         </div>
                         <div className="Menu-price">
                             <h5>#{price}</h5>

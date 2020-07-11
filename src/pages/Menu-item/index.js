@@ -3,8 +3,9 @@ import './style.css';
 import Item from '../../components/Item/item';
 
 function MenuItem({match}) {
-    const[item, setItem] = useState([]);
-    console.log(match)
+    const[item, setItem] = useState({
+      "content": [{}]
+    });
 
     useEffect( ()=>{
       getItem();
@@ -19,7 +20,7 @@ function MenuItem({match}) {
     }
     return (
         <section className="menuItemContainer">
-                    <Item price={item.price} desc ={item.description} name={item.product_type} itemId = {item.id} key={item.id}/>
+                    <Item price={item.price} itemQuantity = {item.content[0].quantity} itemDesc = {item.content[0].add_on_item_name} name={item.product_type} itemId = {item.id} key={item.id}/>
         </section>
     )
 }
