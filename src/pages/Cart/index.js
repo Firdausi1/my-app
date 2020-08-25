@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './cart.css';
 import CartItem from '../../components/Cart-item/cartItem';
 
 
-function Cart({match}) {
-    console.log(match)
+function Cart() {
+    
     return (
         <section className="cart-container">
             <div className="cart-heading">

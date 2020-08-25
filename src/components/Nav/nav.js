@@ -1,12 +1,13 @@
 import React from 'react';
 import './nav.css'
 import{Link} from 'react-router-dom';
+import LogIn from '../Log-in/Login';
 
 function Nav() {
-    // function showLogin(){
-    //     let logIn = document.querySelector('.login');
-    //     logIn.style.display = 'block';
-    // }
+    function showLogin(){
+        let logIn = document.querySelector('.login');
+        logIn.style.display = 'block';
+    }
   return (
     <div className="nav">
         <nav>
@@ -25,12 +26,12 @@ function Nav() {
                 <Link className=" navStyle" to="/cart">
                     <li><img src="../Compound Path 1.svg" alt="cart"/></li>
                 </Link>
-                <Link className="btn-secondary navStyle" to="/#logIn">
+                <Link className="btn-secondary navStyle" to="/#login" onClick={showLogin}>
                     <li>Login</li>
                 </Link>
             </ul>
         </nav>
-    {/* <LogIn /> */}
+        <LogIn/>
     </div>
   );
 }

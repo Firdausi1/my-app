@@ -15,7 +15,6 @@ function Menu(props) {
         const url = "https://surce-delight.herokuapp.com/api/product/all/";
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data);
         setProducts(data[0].product_variation);
     
       }
@@ -25,7 +24,7 @@ function Menu(props) {
         <h2>Our Menu</h2>
         <div className="Menu">
             {products.map(product => (
-                <MenuList name = {product.product_type} price = {product.current_price}  image = {product.product_image}  itemId={product.id} key={product.id} itemDesc = {product.content[0].add_on_item_name} itemQuantity = {product.content[0].quantity}/>
+                <MenuList name = {product.product_type} price = {product.current_price}  image = {product.product_image}  itemId={product.id} key={product.id} itemDesc = {product.description} />
                   
             ))
             }

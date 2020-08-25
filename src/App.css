@@ -59,8 +59,8 @@ h2{
 }
 
 .login-box{
-  width: 50%;
-  margin: 20% auto;
+  width: 40%;
+  margin: 10% auto;
   background: #f7f7f7;
   border-radius: 10px;
   text-align: center;
@@ -82,6 +82,14 @@ h2{
 .login-form button{
   width: 40%;
   margin-bottom: 2%;
+}
+
+.close{
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  cursor: pointer;
+  color: white;
 }
 
 

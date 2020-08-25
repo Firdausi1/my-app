@@ -7,7 +7,7 @@ function Menu() {
         <section className="menu">
             <div className="menu-body">
                 <div className="menu-img">
-                    <img src="./Rectangle 3.jpg" alt="small chop"/>
+                    <img src="./menu-image.jpg" alt="small chop"/>
                 </div>
                 <div className="menu-text">
                     <h2>MENU</h2>
