@@ -7,6 +7,7 @@ import MenuItem from './pages/Menu-item'
 import Cart from './pages/Cart'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Footer from './components/Footer/footer';
+import LogIn from './components/Log-in/Login';
 
 function App() {
 

@@ -18,7 +18,7 @@ function Item({price,name,itemDesc,itemQuantity,itemId}) {
                     <input type="number" name="quantity" placeholder="0" />
                 </div>
                 <Link className="link" to={`/menu/${itemId}/cart`}>
-                    <a className="btn-link">add to cart</a>
+                    <button className="btn-link">add to cart</button>
                 </Link>
             </div>
         </div>
