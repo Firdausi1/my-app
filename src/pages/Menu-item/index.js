@@ -1,27 +1,32 @@
-import React, {useState, useEffect} from 'react';
-import './style.css';
-import Item from '../../components/Item/item';
+import React, { useState, useEffect } from "react";
+import "./style.css";
+import Item from "../../components/Item/item";
+import { BASE_URL } from "../../Path";
 
-function MenuItem({match}) {
-    const[item, setItem] = useState({
-    });
+function MenuItem({ match }) {
+  const { params } = match;
+  const { name, itemId } = params;
+  // name and id in match.params.name and match.params.id
 
-    useEffect( ()=>{
-      getItem();
-    });
+  const url = BASE_URL + `/api/product/${name}/${itemId}/`;
+  const [item, setItem] = useState({});
 
-    const getItem = async () =>{
-          const url = `https://surce-delight.herokuapp.com/api/product/small-chops/${match.params.itemId}/`;
-          const response = await fetch(url);
-          const data = await response.json();
-          console.log(data);
-          setItem(data);
-    }
-    return (
-        <section className="menuItemContainer">
-                    <Item price={item.price} name={item.product_type} itemId = {item.id} key={item.id}/>
-        </section>
-    )
+  useEffect(() => {
+    fetch(BASE_URL + `/api/product/${name}/${itemId}/`).then((r) =>
+      r.json().then((data) => setItem(data))
+    );
+  }, []);
+
+  return (
+    <section className="menuItemContainer">
+      <Item
+        price={item.price}
+        name={item.product_type}
+        itemId={item.id}
+        key={item.id}
+      />
+    </section>
+  );
 }
 
 export default MenuItem;
